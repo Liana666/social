@@ -1,0 +1,21 @@
+nav {
+    padding: 30px;
+    grid-area: side;
+    background-color: rgb(112, 81, 221);
+  }
+  
+  .item {
+    margin-bottom: 10px;
+    color: #000;
+    font-style: 16px;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .item a.active {
+    color: rgb(157 155 255);
+  } 

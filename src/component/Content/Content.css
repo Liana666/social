@@ -1,0 +1,25 @@
+
+  
+  .content p{
+    margin: 10px;
+  }
+  
+  .banner {
+    width: 100%;
+  }
+  
+  .user-photo {
+    width: 70px;
+  }
+  
+  .cart-content {
+    margin: 20px;
+    display: flex;
+    align-items: start;
+  }
+  
+  .content-user {
+    padding-left: 40px;
+  }
+  
+ 

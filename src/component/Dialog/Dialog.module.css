@@ -1,0 +1,88 @@
+.dialogs {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.dialogItem {
+    border-right: 1px solid #00000036;
+    margin-right: 30px;
+}
+
+.item {
+    font-size: 18px;
+    margin-bottom: 15px;
+    opacity: 0.4;
+}
+
+.item::before {
+    content: '\2022';
+    margin-right: 6px;
+    color: #000;
+}
+
+.item:last-child {
+    margin-bottom: 0px;
+}
+
+.item.active{
+    color: #fff;
+}
+
+.message{
+    display: flex;
+   align-items: center;
+}
+
+.message:nth-child(even) {
+    justify-content: flex-end;
+}
+
+.message img{
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.message span {
+    position: relative;
+    background: #ffffff4d;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+textarea {
+    margin: 10px 0;
+    height: 60px;
+    background: rgb(214 214 214 / 48%);
+    color: #777;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 10px;
+    border-radius: 6px;
+    width: 50%;
+    border: none;
+}
+hr {
+    margin: 20px 0;
+    color: #00000036;
+    background-color: #00000036;
+    height: 0.6px;
+    border: none;
+}
+
+button {
+    padding: 15px;
+    background-color: rgb(112, 81, 221);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    border: none;
+}

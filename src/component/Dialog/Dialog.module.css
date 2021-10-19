@@ -78,11 +78,11 @@ hr {
 }
 
 button {
-    padding: 15px;
+    padding: 7px;
     background-color: rgb(112, 81, 221);
-    width: 150px;
+    width: 88px;
     display: flex;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 8px;
     border: none;
 }

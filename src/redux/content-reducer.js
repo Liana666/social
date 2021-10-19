@@ -10,6 +10,7 @@ let initialState = {
 };
 
 const contentReducer = (state = initialState, action) => {
+
     if (action.type === 'ADD-POST') {
         let newPost = {
             id: 6,
@@ -17,12 +18,21 @@ const contentReducer = (state = initialState, action) => {
             like: 0
         };
 
-        state.posts.push(newPost);
-        state.newPostText = "";
+        return {
+            ...state,
+            posts: [...state.posts, newPost],
+            newPostText: ""
+        }
     }
+
     else if (action.type === 'GET-NEW-POST') {
-        state.newPostText = action.newText;
+
+        return {
+            ...state,
+            newPostText: action.newText
+        }
     }
+
     return state;
 }
 

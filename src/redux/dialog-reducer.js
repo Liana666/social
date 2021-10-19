@@ -19,8 +19,14 @@ let initialState = {
 };
 
 const dialogReducer = (state = initialState, action) => {
+
     if (action.type === 'GET-NEW-MESSAGE') {
         state.newMessage = action.newMessage;
+
+        let newState = { ...state };
+        newState.newMessage = state.newMessage;
+
+        return newState;
     }
 
 
@@ -32,7 +38,16 @@ const dialogReducer = (state = initialState, action) => {
         };
         state.message.push(newMessagesObject);
         state.newMessage = '';
+
+        let newState = { ...state };
+        newState.message = [...state.message];
+
+        newState.newMessage = '';
+
+
+        return newState;
     }
+
     return state;
 }
 
@@ -50,5 +65,7 @@ export const getNewMessageCreator = (text) => {
         newMessage: text
     }
 }
+
+
 
 export default dialogReducer;

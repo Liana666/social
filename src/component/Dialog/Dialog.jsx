@@ -44,7 +44,6 @@ const Dialog = (props) => {
             </div>
 
             <div className={name.messages}>
-                {/* {props.message.map((item) => <Messages photo={item.photo} message={item.message} />)} */}
                 {props.message.map(item => <Messages message={item.message} photo={item.photo} />)}
                 < hr />
                 <div className={name.add}>

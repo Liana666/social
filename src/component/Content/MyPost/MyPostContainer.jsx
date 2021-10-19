@@ -2,7 +2,6 @@ import React, { createRef } from 'react';
 import './MyPost.css';
 import MyPost from './MyPost';
 import { addPostCreator, getNewPostCreator } from '../../../redux/content-reducer';
-import store from '../../../redux/redux-store';
 import { connect } from 'react-redux';
 
 
